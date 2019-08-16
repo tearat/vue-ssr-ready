@@ -1,14 +1,13 @@
 // app.js
 import Vue from 'vue'
 import App from './components/App.vue'
-import { createRouter } from './router/router'
+import { createRouter } from './router/client'
 
-export function createApp () {
-  // Создаём экземпляр маршрутизатора
+export function createApp (context) {
+    
   const router = createRouter()
 
   const app = new Vue({
-    // внедряем маршрутизатор в корневой экземпляр Vue
     router,
     render: h => h(App)
   })

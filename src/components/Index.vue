@@ -1,6 +1,6 @@
 <template lang="html">
     <div class="vue-page">
-        <h1>About.vue</h1>
+        <h1>Index.vue</h1>
     </div>
 </template>
 

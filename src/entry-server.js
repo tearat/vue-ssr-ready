@@ -6,7 +6,7 @@ export default context => {
   // мы будем возвращать Promise, чтобы сервер смог дожидаться
   // пока всё не будет готово к рендерингу.
   return new Promise((resolve, reject) => {
-    const { app, router } = createApp()
+    const { app, router } = createApp(context)
 
     // устанавливаем маршрут для маршрутизатора серверной части
     router.push(context.url)

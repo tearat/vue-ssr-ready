@@ -38,6 +38,14 @@ module.exports = {
         loader: 'babel-loader',
         exclude: /node_modules/
       },
+      {
+        test: /\.css$/,
+        loader: ['vue-style-loader', 'css-loader']
+      },
+      {
+        test: /\.scss$/,
+        use: [ 'vue-style-loader', 'css-loader', 'sass-loader' ]
+      },
     ]
   },
   plugins: [
